@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.about-text li {
+  list-style: disc;
+  list-style-position: inside;
+  color: #54D6BB;
+  margin: 2px;
+}
+
+.profile-img {
+  width: 50%;
+}
+
+.profile-img img {
+  width: 40%;
+  margin-top: 40px;
+  border-radius: 5px;
+}

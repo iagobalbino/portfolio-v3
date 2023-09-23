@@ -1,0 +1,14 @@
+.card img {
+  height: 300px;
+  width: 480px;
+  border-radius: 5px;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+}
+
+.project-description p {
+  width: 600px;
+}

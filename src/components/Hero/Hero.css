@@ -7,7 +7,7 @@ section {
 }
 
 .name-title, .job-title {
-  margin: 0 80px 20px 80px;
+  margin-bottom: 20px;
 }
 
 .job-title {
@@ -17,10 +17,6 @@ section {
 .name-title {
   font-size: 64px;
   font-weight: bold;
-}
-
-.social-media {
-  margin: 0 80px;
 }
 
 .social-media a:nth-child(2) {
