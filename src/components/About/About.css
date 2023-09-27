@@ -1,6 +1,7 @@
 .about {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 
 .about-text {
@@ -16,11 +17,8 @@
 }
 
 .profile-img {
-  width: 50%;
-}
-
-.profile-img img {
-  width: 40%;
   margin-top: 40px;
+  height: 200px;
+  width: 200px;
   border-radius: 5px;
 }

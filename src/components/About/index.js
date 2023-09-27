@@ -19,9 +19,7 @@ const About = () => {
           <li>Git</li>
         </ul>
       </div>
-      <div className='profile-img'>
-        <img src="https://github.com/iagobalbino.png" alt="Iago" />
-      </div>
+      <img className='profile-img' src="https://github.com/iagobalbino.png" alt="Iago" />
     </div>
   );
 };

@@ -1,14 +1,33 @@
-.card img {
+.card {
+  margin-top: 40px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+/* .card img {
   height: 300px;
   width: 480px;
   border-radius: 5px;
+} */
+
+.container-img {
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .project-description {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .project-description p {
   width: 600px;
+  margin-left: 20px;
 }

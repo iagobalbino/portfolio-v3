@@ -19,7 +19,7 @@ function App() {
       <SectionTitle title='Portfólio' />
       <Card
         projectName='Profile Card (Front End Mentor)'
-        url='images/profile_card_main.jpg'
+        url='images/profile_card_main_small.jpg'
         description='Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.'
       />
       <SectionTitle title='Outros Projetos' />

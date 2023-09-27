@@ -6,7 +6,9 @@ const Card = (props) => {
       <h3>{props.projectName}</h3>
 
       <div className='project-description'>
-        <img src={props.url} alt={props.projetcName} />
+        <div className='container-img'>
+          {/* <img src={props.url} alt={props.projetcName} /> */}
+        </div>
         <p>{props.description}</p>
       </div>
     </div>
