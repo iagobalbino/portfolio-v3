@@ -1,11 +1,15 @@
+import { useState } from 'react';
 import Header from './components/Header';
 import './App.css';
 import Hero from './components/Hero';
 import SectionTitle from './components/SectionTitle';
 import About from './components/About';
 import Card from './components/Card';
+import Hamburger from 'hamburger-react';
 
 function App() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="App">
       <Header />

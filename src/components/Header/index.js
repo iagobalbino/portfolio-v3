@@ -1,6 +1,8 @@
 import './Header.css';
+import Hamburger from 'hamburger-react'
 
 const Header = () => {
+
   return (
     <header className='header'>
       <h1 className='logo'>
@@ -8,6 +10,13 @@ const Header = () => {
           <img src="images/logo.svg" alt="Logo" />
         </a>
       </h1>
+
+      <Hamburger onToggle={toggled => {
+        if (toggled) {
+
+        }
+      }} />
+
       <ul className='nav'>
         <li>
           <a href='/'>Sobre</a>
@@ -19,6 +28,7 @@ const Header = () => {
           <a href="/">Contato</a>
         </li>
       </ul>
+
     </header>
   );
 };
