@@ -1,4 +1,5 @@
 import './Header.css';
+import Nav from '../Nav/Nav';
 import Hamburger from 'hamburger-react'
 
 const Header = () => {
@@ -13,22 +14,14 @@ const Header = () => {
 
       <Hamburger onToggle={toggled => {
         if (toggled) {
-
+          <Nav />;
+        } else {
+          console.log('fechado');
         }
-      }} />
+      }}
+      />
 
-      <ul className='nav'>
-        <li>
-          <a href='/'>Sobre</a>
-        </li>
-        <li>
-          <a href="/">Portfólio</a>
-        </li>
-        <li>
-          <a href="/">Contato</a>
-        </li>
-      </ul>
-
+      {/* <Nav /> */}
     </header>
   );
 };
