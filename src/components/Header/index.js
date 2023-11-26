@@ -1,6 +1,6 @@
-import './Header.css';
 import Nav from '../Nav/Nav';
-import Hamburger from 'hamburger-react'
+import './Header.css';
+import { useState } from 'react';
 
 const Header = () => {
 
@@ -11,17 +11,6 @@ const Header = () => {
           <img src="images/logo.svg" alt="Logo" />
         </a>
       </h1>
-
-      <Hamburger onToggle={toggled => {
-        if (toggled) {
-          <Nav />;
-        } else {
-          console.log('fechado');
-        }
-      }}
-      />
-
-      {/* <Nav /> */}
     </header>
   );
 };
