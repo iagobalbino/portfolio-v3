@@ -1,9 +1,8 @@
-import Nav from '../Nav/Nav';
+import Burguer from '../Burguer';
+import Menu from '../Menu';
 import './Header.css';
-import { useState } from 'react';
 
 const Header = () => {
-
   return (
     <header className='header'>
       <h1 className='logo'>
@@ -11,6 +10,8 @@ const Header = () => {
           <img src="images/logo.svg" alt="Logo" />
         </a>
       </h1>
+      <Burguer />
+      <Menu />
     </header>
   );
 };
