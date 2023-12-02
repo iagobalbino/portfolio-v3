@@ -4,10 +4,19 @@ import Hero from './components/Hero';
 import SectionTitle from './components/SectionTitle';
 import About from './components/About';
 import Card from './components/Card';
+import Menu from './components/Menu';
+import { useState } from 'react';
 
 function App() {
+  const [toggle, setToggle] = useState('');
+
+  // A função showMenu está no componente Header
+  // function showMenu() {
+  //   console.log('Clicado');
+  // };
 
   return (
+
     <div className="App">
       <Header />
       <Hero

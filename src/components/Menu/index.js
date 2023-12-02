@@ -1,12 +1,8 @@
 import './Menu.css';
 
-
 const Menu = () => {
-
-  const isVisible = { transform: 'translateX(-100%)' };
-
   return (
-    <div className='full-menu' style={{ isVisible }}>
+    <div className='full-menu'>
       <a href="/">
         <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
         Sobre
