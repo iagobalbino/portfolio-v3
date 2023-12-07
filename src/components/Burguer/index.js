@@ -1,8 +1,8 @@
 import './Burguer.css';
 
-const Burguer = () => {
+const Burguer = ({ onMenu }) => {
   return (
-    <nav className='burguer-menu'>
+    <nav className='burguer-menu' onClick={onMenu}>
       <div className='burguer-line' />
       <div className='burguer-line' />
       <div className='burguer-line' />

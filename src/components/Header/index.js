@@ -3,9 +3,9 @@ import Burguer from '../Burguer';
 import Menu from '../Menu';
 
 const Header = (menu) => {
-  function showMenu() {
-    console.log('Clicado');
-  };
+  // function showMenu() {
+  //   console.log('Clicado');
+  // };
 
   return (
     <header className='header'>
@@ -14,7 +14,7 @@ const Header = (menu) => {
           <img src="images/logo.svg" alt="Logo" />
         </a>
       </h1>
-      <Burguer menu={showMenu} />
+      {/* <Burguer menu={showMenu} /> */}
     </header>
   );
 };

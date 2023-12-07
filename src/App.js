@@ -6,19 +6,24 @@ import About from './components/About';
 import Card from './components/Card';
 import Menu from './components/Menu';
 import { useState } from 'react';
+import Burguer from './components/Burguer';
 
 function App() {
   const [toggle, setToggle] = useState('');
 
-  // A função showMenu está no componente Header
-  // function showMenu() {
-  //   console.log('Clicado');
-  // };
+  function showMenu() {
+    setToggle('Clicado');
+  };
 
   return (
 
     <div className="App">
-      <Header />
+      <header>
+        <h1>
+          <img src="images/logo.svg" alt="Logo" />
+        </h1>
+        <Burguer onClick={showMenu} />
+      </header>
       <Hero
         name='Iago Balbino'
         jobTitle='Desenvolvedor Front-End'
