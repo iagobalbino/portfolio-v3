@@ -27,16 +27,21 @@
   justify-content: center;
 }
 
-.profile-img {
-  /* margin-top: 40px; */
-  height: 200px;
-  width: 200px;
-  border-radius: 5px;
-}
-
 .styled-border {
   height: 200px;
   width: 200px;
-  border-color: #54D6BB !important;
-  border-style: solid !important;
+  border-color: #54D6BB;
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 1px;
+}
+
+.profile-img {
+  /* margin-top: 40px; */
+  bottom: 10px;
+  right: 10px;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 16px;
 }

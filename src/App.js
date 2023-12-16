@@ -2,7 +2,7 @@ import './App.css';
 import Hero from './components/Hero';
 import SectionTitle from './components/SectionTitle';
 import About from './components/About';
-import Card from './components/Card';
+import ProjectCard from './components/ProjectCard';
 import Menu from './components/Menu';
 import { useState } from 'react';
 import Burguer from './components/Burguer';
@@ -14,6 +14,35 @@ function App() {
   function showMenu() {
     console.log(setOpen('Clicado!'));
   };
+
+
+  const projects = [
+    {
+      projectName: 'Profile Card (Front End Mentor)',
+      image: '',
+      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+      tecnologies: ['HTML', 'CSS'],
+      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+      link: 'https://github.com/iagobalbino/profile-card-component-main'
+    },
+    {
+      projectName: 'Profile Card (Front End Mentor)',
+      image: '',
+      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+      tecnologies: ['HTML', 'CSS'],
+      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+      link: 'https://github.com/iagobalbino/profile-card-component-main'
+    },
+    {
+      projectName: 'Profile Card (Front End Mentor)',
+      image: '',
+      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+      tecnologies: ['HTML', 'CSS'],
+      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+      link: 'https://github.com/iagobalbino/profile-card-component-main'
+    }
+
+  ];
 
   return (
 
@@ -32,13 +61,11 @@ function App() {
         urlLinkeding='https://www.linkedin.com/in/iagobalbino/'
       />
       <SectionTitle title='Sobre' />
-      <About />
-      <SectionTitle title='Portfólio' />
-      <Card
-        projectName='Profile Card (Front End Mentor)'
-        url='images/profile_card_main_small.jpg'
-        description='Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.'
+      <About
+        aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />
+      <SectionTitle title='Portfólio' />
+      <ProjectCard />
       <SectionTitle title='Outros Projetos' />
 
     </div>
