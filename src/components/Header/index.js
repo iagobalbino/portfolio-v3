@@ -1,12 +1,6 @@
 import './Header.css';
-import Burguer from '../Burguer';
-import Menu from '../Menu';
 
-const Header = (menu) => {
-  // function showMenu() {
-  //   console.log('Clicado');
-  // };
-
+const Header = ({ href }) => {
   return (
     <header className='header'>
       <h1 className='logo'>
@@ -14,7 +8,11 @@ const Header = (menu) => {
           <img src="images/logo.svg" alt="Logo" />
         </a>
       </h1>
-      {/* <Burguer menu={showMenu} /> */}
+      <ul className='header-menu'>
+        <li><a href={href}>Sobre</a></li>
+        <li><a href={href}>Portfólio</a></li>
+        <li><a href={href}>Contato</a></li>
+      </ul>
     </header>
   );
 };

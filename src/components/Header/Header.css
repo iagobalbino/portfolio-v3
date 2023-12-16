@@ -6,6 +6,13 @@
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: 76px;
+  width: 76px;
+}
+
+.header-menu li {
+  display: inline;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #64FFDA;
 }

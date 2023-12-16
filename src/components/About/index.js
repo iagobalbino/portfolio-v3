@@ -19,7 +19,11 @@ const About = () => {
           <li>Git</li>
         </ul>
       </div>
-      <img className='profile-img' src="https://github.com/iagobalbino.png" alt="Iago" />
+      <div className='profile-container'>
+        <div className='styled-border'>
+          {/* <img className='profile-img' src="https://github.com/iagobalbino.png" alt="Iago" /> */}
+        </div>
+      </div>
     </div>
   );
 };

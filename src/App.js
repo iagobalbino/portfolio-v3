@@ -1,4 +1,3 @@
-import Header from './components/Header';
 import './App.css';
 import Hero from './components/Hero';
 import SectionTitle from './components/SectionTitle';
@@ -7,23 +6,26 @@ import Card from './components/Card';
 import Menu from './components/Menu';
 import { useState } from 'react';
 import Burguer from './components/Burguer';
+import Header from './components/Header';
 
 function App() {
-  const [toggle, setToggle] = useState('');
+  const [open, setOpen] = useState('');
 
   function showMenu() {
-    setToggle('Clicado');
+    console.log(setOpen('Clicado!'));
   };
 
   return (
 
     <div className="App">
-      <header>
+      {/* <header style={{ display: 'flex', justifyContent: 'space-between' }}>
         <h1>
           <img src="images/logo.svg" alt="Logo" />
         </h1>
-        <Burguer onClick={showMenu} />
-      </header>
+        <Burguer toggled={showMenu} />
+        <Menu />
+      </header> */}
+      <Header />
       <Hero
         name='Iago Balbino'
         jobTitle='Desenvolvedor Front-End'
