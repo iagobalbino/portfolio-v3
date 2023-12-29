@@ -1,13 +1,13 @@
 import './ProjectCard.css';
 
-const ProjectCard = ({ projectName, description }) => {
+const ProjectCard = ({ name, image, description }) => {
   return (
     <div className='card'>
-      <h3>{projectName}</h3>
+      <h3>{name}</h3>
 
       <div className='project-description'>
         <div className='container-img'>
-          {/* <img src={props.url} alt={props.projetcName} /> */}
+          <img src={image} alt={description} />
         </div>
         <p>{description}</p>
       </div>

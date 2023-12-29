@@ -15,34 +15,34 @@ function App() {
     console.log(setOpen('Clicado!'));
   };
 
-
-  const projects = [
-    {
-      projectName: 'Profile Card (Front End Mentor)',
-      image: '',
-      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
-      tecnologies: ['HTML', 'CSS'],
-      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
-      link: 'https://github.com/iagobalbino/profile-card-component-main'
-    },
-    {
-      projectName: 'Profile Card (Front End Mentor)',
-      image: '',
-      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
-      tecnologies: ['HTML', 'CSS'],
-      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
-      link: 'https://github.com/iagobalbino/profile-card-component-main'
-    },
-    {
-      projectName: 'Profile Card (Front End Mentor)',
-      image: '',
-      projectAbout: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
-      tecnologies: ['HTML', 'CSS'],
-      githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
-      link: 'https://github.com/iagobalbino/profile-card-component-main'
-    }
-
-  ];
+  const [projects, setProjects] = useState(
+    [
+      {
+        name: 'Profile Card (Front End Mentor)',
+        image: 'images/profile_card_main.jpg',
+        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+        tecnologies: ['HTML', 'CSS'],
+        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+        link: 'https://github.com/iagobalbino/profile-card-component-main'
+      },
+      {
+        name: 'Profile Card (Front End Mentor)',
+        image: '',
+        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+        tecnologies: ['HTML', 'CSS'],
+        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+        link: 'https://github.com/iagobalbino/profile-card-component-main'
+      },
+      {
+        name: 'Profile Card (Front End Mentor)',
+        image: '',
+        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+        tecnologies: ['HTML', 'CSS'],
+        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+        link: 'https://github.com/iagobalbino/profile-card-component-main'
+      }
+    ]
+  );
 
   return (
 
@@ -65,7 +65,11 @@ function App() {
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />
       <SectionTitle title='Portfólio' />
-      <ProjectCard />
+      <ProjectCard
+        name={projects[0].name}
+        image={projects[0].image}
+        description={projects[0].about}
+      />
       <SectionTitle title='Outros Projetos' />
 
     </div>
