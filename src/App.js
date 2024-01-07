@@ -20,26 +20,26 @@ function App() {
       {
         name: 'Profile Card (Front End Mentor)',
         image: 'images/profile_card_main.jpg',
-        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
+        description: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
         tecnologies: ['HTML', 'CSS'],
-        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
+        github: 'https://github.com/iagobalbino/profile-card-component-main',
         link: 'https://github.com/iagobalbino/profile-card-component-main'
       },
       {
-        name: 'Profile Card (Front End Mentor)',
-        image: '',
-        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
-        tecnologies: ['HTML', 'CSS'],
-        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
-        link: 'https://github.com/iagobalbino/profile-card-component-main'
+        name: 'Devflix (DIO)',
+        image: 'images/devflix.png',
+        description: 'Clone da interface da Netflix, projeto do bootcamp MRV Front End SPA Developer da Digital Innovation One.',
+        tecnologies: ['HTML', 'CSS', 'JavaScript', 'Jquery'],
+        github: 'https://github.com/iagobalbino/dio-devflix',
+        link: 'https://github.com/iagobalbino/dio-devflix'
       },
       {
-        name: 'Profile Card (Front End Mentor)',
-        image: '',
-        about: 'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.',
-        tecnologies: ['HTML', 'CSS'],
-        githubLink: 'https://github.com/iagobalbino/profile-card-component-main',
-        link: 'https://github.com/iagobalbino/profile-card-component-main'
+        name: 'Casa Verde',
+        image: 'images/devflix.png',
+        description: 'Projeto do desafio de 7 dias de React da Alura',
+        tecnologies: ['React'],
+        github: 'https://github.com/iagobalbino/7-days-react',
+        link: 'https://github.com/iagobalbino/7-days-react'
       }
     ]
   );
@@ -65,11 +65,14 @@ function App() {
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />
       <SectionTitle title='Portfólio' />
-      <ProjectCard
+      {/* <ProjectCard
         name={projects[0].name}
         image={projects[0].image}
         description={projects[0].about}
-      />
+      /> */}
+
+      {projects.map(projects => <ProjectCard name={projects.name} image={projects.image} description={projects.description} github={projects.github} link={projects.link} />)}
+
       <SectionTitle title='Outros Projetos' />
 
     </div>

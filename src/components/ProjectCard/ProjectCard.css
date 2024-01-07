@@ -32,10 +32,40 @@
 .project-description {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.project-description p {
-  width: 600px;
+.project-info {
+  /* width: 600px; */
   margin-left: 20px;
+}
+
+.project-info a:nth-child(3) {
+  margin-left: 12px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #fff
+}
+
+.github, .external-link {
+  height: 24px;
+  width: 24px;
+}
+
+.external-link {
+  margin-left: 20px;
+}
+
+.tecnology {
+  margin-top: 10px;
+}
+
+.tecnology p {
+  display: inline;
+  color: #54D6BB;
+}
+
+.tecnology p:nth-child(2) {
+  margin: 12px;
 }
