@@ -2,11 +2,14 @@ import './App.css';
 import Hero from './components/Hero';
 import SectionTitle from './components/SectionTitle';
 import About from './components/About';
+import ProjectCardLeft from './components/ProjectCardLeft';
 import ProjectCard from './components/ProjectCard';
 import Menu from './components/Menu';
 import { useState } from 'react';
 import Burguer from './components/Burguer';
 import Header from './components/Header';
+import OthersCard from './components/OthersCard';
+import Footer from './components/Footer/footer';
 
 function App() {
   const [open, setOpen] = useState('');
@@ -44,6 +47,30 @@ function App() {
     ]
   );
 
+  // for (let i = 0; i < projects.length; i++) {
+  //   if (projects[i] % 2 === 0) {
+  //     return (
+  //       projects.map(projects =>
+  //         <ProjectCard
+  //           name={projects.name}
+  //           image={projects.image}
+  //           description={projects.description}
+  //           github={projects.github} link={projects.link}
+  //         />)
+  //     );
+  //   } else {
+  //     return (
+  //       projects.map(projects =>
+  //         <ProjectCardLeft
+  //           name={projects.name}
+  //           image={projects.image}
+  //           description={projects.description}
+  //           github={projects.github} link={projects.link}
+  //         />)
+  //     );
+  //   }
+  // }
+
   return (
 
     <div className="App">
@@ -71,10 +98,22 @@ function App() {
         description={projects[0].about}
       /> */}
 
-      {projects.map(projects => <ProjectCard name={projects.name} image={projects.image} description={projects.description} github={projects.github} link={projects.link} />)}
-
+      {projects.map(projects =>
+        <ProjectCard
+          name={projects.name}
+          image={projects.image}
+          description={projects.description}
+          github={projects.github} link={projects.link}
+        />)
+      }
       <SectionTitle title='Outros Projetos' />
-
+      <OthersCard
+        projectName={'Mobile Blog App Interface'}
+        projectDescription={'Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.'}
+        tag1={'HTML5'}
+        tag2={'CSS3'}
+      />
+      <Footer />
     </div>
   );
 }

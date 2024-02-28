@@ -1,0 +1,33 @@
+.container {
+  height: 220px;
+  width: 220px;
+  background-color: #112240;
+  padding: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.CiFolderOn {
+  height: 24px;
+  width: 24px;
+}
+
+.container h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 12px;
+  color: #A1ABCA;
+}
+
+.tech-tags p {
+  display: inline-block;
+  margin-top: 40px;
+  color: #54D6BB;
+}
+
+.tech-tags p:nth-child(2) {
+  margin-left: 10px;
+}
