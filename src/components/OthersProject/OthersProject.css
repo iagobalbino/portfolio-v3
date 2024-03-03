@@ -1,0 +1,4 @@
+.othersCard-container {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+}

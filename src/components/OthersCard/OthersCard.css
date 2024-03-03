@@ -1,4 +1,4 @@
-.container {
+.othersCard {
   height: 220px;
   width: 220px;
   background-color: #112240;
@@ -12,12 +12,12 @@
   width: 24px;
 }
 
-.container h3 {
+.othersCard h3 {
   font-size: 12px;
   font-weight: bold;
 }
 
-.container p {
+.othersCard p {
   font-size: 12px;
   color: #A1ABCA;
 }
