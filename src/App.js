@@ -48,7 +48,7 @@ function App() {
     ]
   );
 
-  const [othersProject, setOhtersProject] = useState(
+  const [othersProjects, setOhtersProjects] = useState(
     [
       {
         name: 'Profile Card (Front End Mentor)',
@@ -100,16 +100,8 @@ function App() {
       }
       <SectionTitle title='Outros Projetos' />
 
-      <OthersProject />
-
-      {/* {
-        othersProject.map(othersProject => <OthersCard
-          name={othersProject.name}
-          description={othersProject.description}
-          tag1={othersProject.tecnologies}
-        />)
-      } */}
-
+      {othersProjects.map((otherProject) => <OthersCard otherProject={otherProject} />)}
+      {/* Renderizar o carde de OthersProject com estilo em grid */}
       <Footer />
     </div>
   );

@@ -1,15 +1,15 @@
 import './OthersCard.css';
 import { CiFolderOn } from "react-icons/ci";
 
-const OthersCard = ({ tag1, tag2, name, description }) => {
+const OthersCard = ({ otherProject }) => {
   return (
     <div className='othersCard'>
       <CiFolderOn className='CiFolderOn' />
-      <h3>{name}</h3>
-      <p>{description}</p>
+      <h3>{otherProject.name}</h3>
+      <p>{otherProject.description}</p>
       <div className='tech-tags'>
-        <p>{tag1}</p>
-        <p>{tag2}</p>
+        <p>{otherProject.tag1}</p>
+        <p>{otherProject.tag2}</p>
       </div>
     </div>
   );
