@@ -1,10 +1,10 @@
 import './OthersProject.css';
 import OthersCard from '../OthersCard';
 
-const OthersProject = (otherProjects) => {
+const OthersProject = ({ projects }) => {
   return (
     <div className='othersCard-container'>
-      {otherProjects.map((otherProject) => <OthersCard otherProject={otherProject} />)}
+      {projects.map((otherProject) => <OthersCard otherProject={otherProject} />)}
     </div>
   );
 };
