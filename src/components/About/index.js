@@ -1,6 +1,6 @@
 import './About.css';
 
-const About = ({ aboutText, hability }) => {
+const About = ({ aboutText }) => {
   return (
     <div className='about'>
       <div className='about-text'>

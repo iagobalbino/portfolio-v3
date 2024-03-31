@@ -1,4 +1,6 @@
 .othersCard-container {
   display: grid;
-  grid-template-columns: 220px 220px 220px;
+  grid-template-columns: 260px 260px 260px;
+  margin-bottom: 40px;
+  justify-content: center;
 }
