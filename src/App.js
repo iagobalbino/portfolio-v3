@@ -84,7 +84,7 @@ function App() {
         jobTitle='Desenvolvedor Front-End'
         urlLinkeding='https://www.linkedin.com/in/iagobalbino/'
       />
-      <SectionTitle title='Sobre' />
+      {/* <SectionTitle title='Sobre' /> */}
       <About
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />

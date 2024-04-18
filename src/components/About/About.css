@@ -1,10 +1,15 @@
+/* .section-title {
+  margin-left: 36px;
+} */
+
 .about {
-  display: flex;
+  /* display: inline; */
   margin-bottom: 150px;
   justify-content: center;
 }
 
 .about-text {
+  display: inline-block;
   width: 50%;
   margin-top: 40px;
 }
@@ -28,6 +33,7 @@
 }
 
 .styled-border {
+  display: inline-block;
   height: 200px;
   width: 200px;
   border-color: #54D6BB;
@@ -37,7 +43,7 @@
 }
 
 .profile-img {
-  /* margin-top: 40px; */
+  display: inline-block;
   bottom: 10px;
   right: 10px;
   position: relative;
