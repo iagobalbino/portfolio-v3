@@ -1,5 +1,6 @@
-.card {
-  margin-top: 40px;
+.card-container {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .card h3 {
@@ -7,12 +8,6 @@
   font-weight: bold;
   margin-bottom: 20px
 }
-
-/* .card img {
-  height: 300px;
-  width: 480px;
-  border-radius: 5px;
-} */
 
 .container-img {
   height: 200px;

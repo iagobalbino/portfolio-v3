@@ -1,11 +1,11 @@
 .hero-page {
+  margin: 0 auto;
   box-sizing: border-box;
   height: 90vh;
-  width: 100%;
+  width: 960px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 80px;
 }
 
 .name-title, .job-title {

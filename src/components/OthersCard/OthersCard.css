@@ -1,6 +1,6 @@
 .othersCard {
-  height: 220px;
-  width: 220px;
+  height: 300px;
+  width: 300px;
   background-color: #112240;
   padding: 16px;
   border-radius: 5px;
@@ -8,17 +8,17 @@
 }
 
 .CiFolderOn {
-  height: 24px;
-  width: 24px;
+  height: 36px;
+  width: 36px;
 }
 
 .othersCard h3 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .othersCard p {
-  font-size: 12px;
+  font-size: 16px;
   color: #A1ABCA;
 }
 

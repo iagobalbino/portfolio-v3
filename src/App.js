@@ -84,11 +84,9 @@ function App() {
         jobTitle='Desenvolvedor Front-End'
         urlLinkeding='https://www.linkedin.com/in/iagobalbino/'
       />
-      {/* <SectionTitle title='Sobre' /> */}
       <About
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />
-      <SectionTitle title='Portfólio' />
 
       {projects.map(projects =>
         <ProjectCard
@@ -98,8 +96,7 @@ function App() {
           github={projects.github} link={projects.link}
         />)
       }
-      <SectionTitle title='Outros Projetos' />
-
+      <SectionTitle title='Outros projetos' />
       {basicProjects.map((otherProject) => <OthersProject projects={basicProjects.map(project => project)} />)}
       {/* Renderizar o card de OthersProject com estilo em grid */}
       <Footer />

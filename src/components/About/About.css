@@ -2,10 +2,16 @@
   margin-left: 36px;
 } */
 
+
+
 .about {
-  /* display: inline; */
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
   margin-bottom: 150px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .about-text {

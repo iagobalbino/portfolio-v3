@@ -5,8 +5,8 @@ const About = ({ aboutText }) => {
   return (
     <div className='container-about'>
       <div className='about'>
-        <SectionTitle className='section-title' title='Sobre' />
         <div className='about-text'>
+          <SectionTitle className='section-title' title='Sobre' />
           <p>{aboutText}
           </p>
 
