@@ -70,6 +70,27 @@ function App() {
         tecnologies: ['React'],
         github: 'https://github.com/iagobalbino/7-days-react',
         link: 'https://github.com/iagobalbino/7-days-react'
+      },
+      {
+        name: 'Exemplo 1',
+        description: 'Projeto do desafio de 7 dias de React da Alura',
+        tecnologies: ['React'],
+        github: 'https://github.com/iagobalbino/7-days-react',
+        link: 'https://github.com/iagobalbino/7-days-react'
+      },
+      {
+        name: 'Exemplo 2',
+        description: 'Projeto do desafio de 7 dias de React da Alura',
+        tecnologies: ['React'],
+        github: 'https://github.com/iagobalbino/7-days-react',
+        link: 'https://github.com/iagobalbino/7-days-react'
+      },
+      {
+        name: 'Exemplo 3',
+        description: 'Projeto do desafio de 7 dias de React da Alura',
+        tecnologies: ['React'],
+        github: 'https://github.com/iagobalbino/7-days-react',
+        link: 'https://github.com/iagobalbino/7-days-react'
       }
     ]
   );
@@ -96,9 +117,7 @@ function App() {
           github={projects.github} link={projects.link}
         />)
       }
-      <SectionTitle title='Outros projetos' />
-      {basicProjects.map((otherProject) => <OthersProject projects={basicProjects.map(project => project)} />)}
-      {/* Renderizar o card de OthersProject com estilo em grid */}
+      <OthersProject project={basicProjects} />
       <Footer />
     </div>
   );

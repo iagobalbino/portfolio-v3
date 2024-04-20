@@ -1,9 +1,7 @@
 .othersCard-container {
   width: 960px;
   margin: 0 auto;
-}
 
-.othersCards {
   display: grid;
   grid-template-columns: 320px 320px 320px;
   margin-bottom: 40px;
