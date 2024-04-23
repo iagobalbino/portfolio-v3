@@ -1,16 +1,13 @@
 import './App.css';
 import Hero from './components/Hero';
-import SectionTitle from './components/SectionTitle';
 import About from './components/About';
-import ProjectCardLeft from './components/ProjectCardLeft';
-import ProjectCard from './components/ProjectCard';
 import Menu from './components/Menu';
 import { useState } from 'react';
 import Burguer from './components/Burguer';
 import Header from './components/Header';
-import OthersCard from './components/OthersCard';
 import Footer from './components/Footer/footer';
 import OthersProject from './components/OthersProject';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [open, setOpen] = useState('');
@@ -109,15 +106,8 @@ function App() {
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}
       />
 
-      {projects.map(projects =>
-        <ProjectCard
-          name={projects.name}
-          image={projects.image}
-          description={projects.description}
-          github={projects.github} link={projects.link}
-        />)
-      }
-      <OthersProject project={basicProjects} />
+      <Portfolio portfolioArr={projects.map((project => project))} />
+      <OthersProject projectArr={basicProjects.map((project => project))} />
       <Footer />
     </div>
   );

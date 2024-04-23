@@ -5,10 +5,9 @@ import SectionTitle from '../SectionTitle';
 const OthersProject = ({ projectArr }) => {
   return (
     <div className='container'>
-      <SectionTitle title='Outros projets' />
+      <SectionTitle title='Outros projetos' />
       <div className='othersCard-container'>
-        {/* {projectArr.map((project) => <OthersCard otherProject={project} />)} */}
-        {/* Tentando rendereizar somente o card de outros projetos */}
+        {projectArr.map((project) => <OthersCard otherProject={project} />)}
       </div>
     </div>
   );
