@@ -17,3 +17,9 @@
   font-weight: bold;
   color: #64FFDA;
 }
+
+@media (max-width: 480px) {
+  .header-menu li {
+    display: none;
+  }
+}
