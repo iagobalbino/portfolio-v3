@@ -19,6 +19,10 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    width: 360px;
+  }
+
   .header-menu li {
     display: none;
   }

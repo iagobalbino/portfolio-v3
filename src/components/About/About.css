@@ -1,15 +1,10 @@
-/* .section-title {
-  margin-left: 36px;
-} */
-
-
-
 .about {
   margin: 0 auto;
   width: 960px;
   display: flex;
   margin-bottom: 150px;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 
 }
@@ -56,4 +51,14 @@
   height: 200px;
   width: 200px;
   border-radius: 16px;
+}
+
+@media (max-width: 480px) {
+  .about {
+    width: 360px;
+  }
+
+  .about-text {
+    width: 360px;
+  }
 }

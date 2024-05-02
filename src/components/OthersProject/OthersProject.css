@@ -9,3 +9,13 @@
   margin-bottom: 40px;
   justify-content: center;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 360px;
+  }
+
+  .othersCard-container {
+    grid-template-columns: 300px;
+  }
+}

@@ -31,3 +31,9 @@
   height: 24px;
   width: 24px;
 }
+
+@media (max-width: 480px) {
+  .footer {
+    width: 360px;
+  }
+}

@@ -32,3 +32,9 @@
 .tech-tags p:nth-child(2) {
   margin-left: 10px;
 }
+
+@media (max-width: 480px) {
+  .othersCard {
+    width: 360px;
+  }
+}
