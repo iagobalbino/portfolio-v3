@@ -35,7 +35,7 @@ function App() {
         link: 'https://github.com/iagobalbino/dio-devflix'
       },
       {
-        name: 'Casa Verde',
+        name: 'Mobile Blog Interface',
         image: './images/mobile_blog_interface.jpg',
         description: 'Projeto do desafio de 7 dias de React da Alura',
         tecnologies: ['React'],
@@ -100,7 +100,8 @@ function App() {
       <Hero
         name='Iago Balbino'
         jobTitle='Desenvolvedor Front-End'
-        urlLinkeding='https://www.linkedin.com/in/iagobalbino/'
+        linkedin='https://www.linkedin.com/in/iagobalbino/'
+        github='https://github.com/iagobalbino'
       />
       <About
         aboutText={'Localizado no Rio de Janeiro, sou um Desenvolvedor Front-End que descobriu a sua paixão por programação na faculdade, meu gosto por tecnologia veio sempre de muito cedo. Estou sempre em busca de aprimoramento, atualmente tenho focado a desenvolver minhas habilidades com o React.js.'}

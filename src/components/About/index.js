@@ -20,6 +20,7 @@ const About = ({ aboutText }) => {
             <li>Javascript</li>
             <li>React</li>
             <li>Git</li>
+            <li>Figma</li>
           </ul>
         </div>
         {/* <div className='profile-container'> */}

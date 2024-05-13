@@ -1,20 +1,20 @@
 import './Hero.css';
 
-const Hero = (props) => {
+const Hero = ({ linkedin, github, jobTitle, name }) => {
   return (
     <section className='hero-page'>
       <h2 className='name-title'>
-        {props.name}
+        {name}
       </h2>
       <p className='job-title'>
-        {props.jobTitle}
+        {jobTitle}
       </p>
       <div className='social-media'>
-        <a href={props.urlLinkedin}>
+        <a href={linkedin} target='_blank' rel='noreferrer'>
           <img src="images/linkedin_white.svg" alt="LinkedIn" />
         </a>
 
-        <a href={props.github}>
+        <a href={github} target='_blank' rel='noreferrer'>
           <img src="images/github_white.svg" alt="Github" />
         </a>
       </div>
