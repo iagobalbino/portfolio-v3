@@ -55,10 +55,14 @@
 
 @media (max-width: 480px) {
   .about {
-    width: 360px;
+    width: 300px;
   }
 
   .about-text {
-    width: 360px;
+    width: 300px;
+  }
+
+  .styled-border {
+    margin: 60px auto;
   }
 }
