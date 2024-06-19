@@ -59,3 +59,33 @@
 .tecnology p:nth-child(2) {
   margin: 12px;
 }
+
+@media (max-width: 480px) {
+  .card {
+    height: 450px;
+    width: 312px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .project-description {
+    flex-direction: column;
+  }
+
+  .container-img {
+    height: 200px;
+    width: 328px;
+  }
+
+  .project-info {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .external-link {
+    margin: 0;
+  }
+}
