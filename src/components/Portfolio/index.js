@@ -4,10 +4,12 @@ import PortfolioCard from '../PortfolioCard';
 
 const Portfolio = ({ portfolioArr }) => {
   return (
-    <div className='portfolio-container'>
+    <section className='section-container'>
       <SectionTitle title='Portfólio' />
-      {portfolioArr.map((project => <PortfolioCard project={project} />))}
-    </div>
+      <div className='portfolio-container'>
+        {portfolioArr.map((project => <PortfolioCard project={project} />))}
+      </div>
+    </section>
   );
 };
 

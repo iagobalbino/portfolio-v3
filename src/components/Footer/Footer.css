@@ -18,16 +18,16 @@
   justify-content: center;
 }
 
-.icons {
+/* .icons {
   margin-left: 10px;
-}
+} */
 
-.github {
+/* .github {
   margin-left: 10px;
-}
+} */
 
 .github, .linkedin {
-  color: #8892B0;
+  /* color: #8892B0; */
   height: 24px;
   width: 24px;
 }

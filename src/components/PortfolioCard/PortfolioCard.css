@@ -1,36 +1,35 @@
-.card h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px
+.card {
+  /* display: inline-block; */
+  height: 520px;
+  width: 360px;
+  border: 2px solid #54D6BB;
+  border-radius: 16px;
+}
+
+.project-description h3, .project-info p {
+  text-align: center;
+}
+
+.project-info {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .container-img {
   height: 200px;
-  width: 400px;
-  border-radius: 5px;
+  width: 320px;
+  margin: 20px auto;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .container-img img {
   max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.project-description {
+.icons {
   display: flex;
-  align-items: center;
-}
-
-.project-info {
-  /* width: 600px; */
-  margin-left: 20px;
-}
-
-.project-info a:nth-child(3) {
-  margin-left: 12px;
+  justify-content: center;
 }
 
 .icons a {
@@ -39,31 +38,35 @@
 }
 
 .github, .external-link {
-  height: 24px;
-  width: 24px;
-}
-
-.external-link {
-  margin-left: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
 }
 
 .tecnology {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .tecnology p {
-  display: inline;
   color: #54D6BB;
-}
-
-.tecnology p:nth-child(2) {
-  margin: 12px;
+  padding: 10px;
 }
 
 @media (max-width: 480px) {
   .card {
-    height: 450px;
-    width: 312px;
+    margin-top: 20px;
+    height: 520px;
+    width: 328px;
+    border: 2px solid #54D6BB;
+    border-radius: 16px;
+  }
+
+  .container-img {
+    margin-top: 20px;
+    height: 180px;
+    width: 288px;
   }
 
   .card h3 {
@@ -75,17 +78,24 @@
     flex-direction: column;
   }
 
-  .container-img {
-    height: 200px;
-    width: 328px;
-  }
-
   .project-info {
     text-align: center;
     margin-left: 0;
   }
 
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
   .external-link {
     margin: 0;
+  }
+
+
+  .github, .external-link {
+    padding: 20px;
+    height: 40px;
+    width: 40px;
   }
 }
