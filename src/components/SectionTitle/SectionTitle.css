@@ -1,7 +1,6 @@
 .title {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .title h3 {
@@ -14,4 +13,19 @@
   height: 0;
   width: 320px;
   margin-left: 100px;
+}
+
+@media (max-width: 360px) {
+  .title {
+    justify-content: center;
+  }
+
+  .title h3 {
+    font-size: 24px;
+  }
+
+  .line {
+    margin-left: 20px;
+    width: 180px;
+  }
 }
