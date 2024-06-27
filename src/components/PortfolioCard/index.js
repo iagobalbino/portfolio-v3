@@ -14,8 +14,7 @@ const PortfolioCard = ({ project }) => {
         <div className='project-info'>
           <p>{project.description}</p>
           <div className='tecnology'>
-            <p>HTML</p>
-            <p>CSS</p>
+            {project.tecnologies.map((tec => <p>{tec}</p>))}
           </div>
           <div className='icons'>
             <a href={project.github} target='_blank'><FiGithub className='github' /></a>

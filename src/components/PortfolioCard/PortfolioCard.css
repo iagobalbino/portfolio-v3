@@ -6,6 +6,12 @@
   border-radius: 16px;
 }
 
+.card:hover {
+  transition: transform .5s;
+  transform: scale(1.01);
+  box-shadow: 0 8px 17px 0 rgba(13, 153, 0, 0.644), 0 6px 20px 0 rgba(9, 163, 4, 0.15);
+}
+
 .project-description h3, .project-info p {
   text-align: center;
 }
