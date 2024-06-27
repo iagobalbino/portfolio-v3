@@ -7,9 +7,8 @@ const OthersCard = ({ otherProject }) => {
       <CiFolderOn className='CiFolderOn' />
       <h3>{otherProject.name}</h3>
       <p>{otherProject.description}</p>
-      <div className='tech-tags'>
-        <p>{otherProject.tag1}</p>
-        <p>{otherProject.tag2}</p>
+      <div className='tecs'>
+        {otherProject.tecnologies.map(tec => <p>{tec}</p>)}
       </div>
     </div>
   );

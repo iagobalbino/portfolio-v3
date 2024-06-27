@@ -23,15 +23,16 @@
   color: #A1ABCA;
 }
 
-.tech-tags p {
-  display: inline-block;
-  margin-top: 40px;
-  color: #54D6BB;
+.tecs {
+  display: flex;
+  justify-content: center;
 }
 
-.tech-tags p:nth-child(2) {
-  margin-left: 10px;
+.tecs p {
+  padding: 10px;
 }
+
+
 
 @media (max-width: 480px) {
   .othersCard {
