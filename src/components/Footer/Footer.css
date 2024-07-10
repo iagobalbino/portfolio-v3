@@ -8,7 +8,7 @@
 }
 
 .footer p {
-  color: #8892B0;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -18,22 +18,27 @@
   justify-content: center;
 }
 
-/* .icons {
-  margin-left: 10px;
-} */
-
-/* .github {
-  margin-left: 10px;
-} */
-
 .github, .linkedin {
-  /* color: #8892B0; */
+  color: #fff;
   height: 24px;
   width: 24px;
 }
 
 @media (max-width: 480px) {
   .footer {
-    width: 360px;
+    height: 120px;
+    width: 100%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .github, .linkedin {
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    padding: 0 5px 0 5px;
   }
 }

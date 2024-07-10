@@ -33,17 +33,17 @@
   max-width: 100%;
 }
 
-.icons {
+.portfolio-icons {
   display: flex;
   justify-content: center;
 }
 
-.icons a {
+.portfolio-icons a {
   text-decoration: none;
   color: #fff
 }
 
-.github, .external-link {
+.portfolio-github, .portfolio-external-link {
   height: 40px;
   width: 40px;
   padding: 10px;
@@ -89,7 +89,7 @@
     margin-left: 0;
   }
 
-  .icons {
+  .portfolio-icons {
     display: flex;
     justify-content: center;
   }
@@ -99,7 +99,7 @@
   }
 
 
-  .github, .external-link {
+  .portfolio-github, .portfolio-external-link {
     padding: 20px;
     height: 40px;
     width: 40px;
