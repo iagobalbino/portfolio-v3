@@ -2,13 +2,13 @@ const projects = [
   {
     "name": "Profile Card (Front End Mentor)",
     "image": "./images/profile_card_main.jpg",
-    "description": "Primeiro projeto que fiz do ótimo site frontendmentor.io, onde foi desenvolvido um card de rede social.",
+    "description": "Card de perfil de rede social fictícia, projeto sugerido frontendmentor.io.",
     "tecnologies": [
       "HTML",
       "CSS"
     ],
     "github": "https://github.com/iagobalbino/profile-card-component-main",
-    "link": "/profile-card-component-main"
+    "link": "https://iagobalbino.github.io/profile-card-component-main"
   },
   {
     "name": "Devflix (DIO)",
@@ -21,17 +21,18 @@ const projects = [
       "Jquery"
     ],
     "github": "https://github.com/iagobalbino/dio-devflix",
-    "link": "/dio-devflix"
+    "link": "https://iagobalbino.github.io/dio-devflix"
   },
   {
-    "name": "Mobile Blog Interface",
+    "name": "Mobile blog path interface",
     "image": "./images/mobile_blog_interface.jpg",
-    "description": "Projeto do desafio de 7 dias de React da Alura",
+    "description": "Interface mobile de um blog divido e 3 partes, home, post e comentários",
     "tecnologies": [
-      "React"
+      "HTML",
+      "CSS"
     ],
-    "github": "https://github.com/iagobalbino/7-days-react",
-    "link": "/7-days-react"
+    "github": "https://github.com/iagobalbino/mobile-blog-path-interface",
+    "link": "https://iagobalbino.github.io/mobile-blog-path-interface"
   }
 ];
 

@@ -1,7 +1,6 @@
 import './PortfolioCard.css';
 import { FiGithub } from 'react-icons/fi';
 import { RxExternalLink } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
 
 const PortfolioCard = ({ project }) => {
   return (
@@ -18,11 +17,12 @@ const PortfolioCard = ({ project }) => {
             {project.tecnologies.map((tec => <p>{tec}</p>))}
           </div>
           <div className='portfolio-icons'>
-            <a href={project.github} target='_blank' rel='noreferrer'><FiGithub className='portfolio-github' /></a>
-            <Link to={project.link}>
-              {project.name}
+            <a href={project.github} target='_blank' rel='noreferrer'>
+              <FiGithub className='portfolio-github' />
+            </a>
+            <a href={project.link} target='_blank' rel='noreferrer'>
               <RxExternalLink className='portfolio-external-link' />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

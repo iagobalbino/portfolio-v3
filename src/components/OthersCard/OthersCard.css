@@ -1,3 +1,11 @@
+.others-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+  width: 330px;
+}
+
 .othersCard {
   height: 300px;
   width: 300px;
@@ -5,7 +13,13 @@
   padding: 16px;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.othersCard:hover {
+  transition: transform .5s;
+  transform: scale(1.01);
+  box-shadow: 0 8px 8px 0 rgba(13, 153, 0, 0.644), 0 6px 20px 0 rgba(9, 163, 4, 0.15);
 }
 
 .CiFolderOn {
